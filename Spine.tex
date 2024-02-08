@@ -1,7 +1,26 @@
 \documentclass[a4paper, 11pt, titlepage]{article}
 
 \usepackage[margin=0.75in, bmargin=1in]{geometry}
-\usepackage{graphicx, mathpazo}
+\usepackage{graphicx, tikz, mathpazo, enumitem, tabularx, xcolor, multirow,tcolorbox}
+\usepackage[parfill=0pt]{parskip}
+
+%FORMATTING FOR SECTION HEADINGS
+\usepackage{titlesec}
+\colorlet{titlerulecolor}{gray}
+\titleformat{\section}
+	 {\normalfont\LARGE\bfseries}{\thesection}{1em}{}[{\titlerule[1.5pt]}]
+\titleformat{\subsection}
+	 {\normalfont\Large\bfseries}{\thesubsection}{1em}{}[{\color{titlerulecolor}\titlerule[0.8pt]}]
+\titleformat{\subsubsection}
+	 {\normalfont\large\itshape}{\thesubsubsection}{1em}{}
+
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+
+\newenvironment{subject}
+	{\normalfont\large\itshape\vspace{1em}}
+
+
+
 
 \title{The IDS Curriculum}
 \author{The Faculty,\\coordinated by Eigen John T. Ignacio, Ph.D.}
@@ -13,11 +32,10 @@
 \newpage
 \tableofcontents
 
-\include{NatureOfProgram}
 
-
+\include{01_Rationale_Obj_Strat_Proc}
 
 % PROGRAMS
-\include{IT_Program}
+%\include{IT_Program}
 
 \end{document}
