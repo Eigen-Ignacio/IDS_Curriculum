@@ -1,8 +1,8 @@
 \documentclass[a4paper, 11pt, titlepage]{article}
 
 \usepackage[margin=0.75in, bmargin=1in]{geometry}
-\usepackage{graphicx, tikz, mathpazo, enumitem, tabularx, xcolor, multirow,tcolorbox}
-\usepackage{amsmath}
+\usepackage{graphicx, tikz, mathpazo, enumitem, tabularx, xcolor, multirow, tcolorbox}
+\usepackage{hanging, booktabs, float, amsmath}
 \usepackage[parfill=0pt]{parskip}
 
 %FORMATTING FOR SECTION HEADINGS
@@ -24,11 +24,33 @@
 
 
 \title{The IDS Curriculum}
-\author{The Faculty,\\coordinated by Eigen John T. Ignacio, Ph.D.}
+\author{The Faculty}
 
 
 \begin{document}
-\maketitle
+%----------------START COVER PAGE------------------------------
+\thispagestyle{empty}
+\begin{figure}
+    \centering
+    \includegraphics[width=4cm]{IIT_logo.png}
+\end{figure}
+
+\begin{center}	
+	{
+	Republic of the Philippines\\
+	Mindanao State University - Iligan Institute of Technology\\
+	Iligan City, Philippines\\
+	\vspace*{3cm}	
+	\huge \bf CURRICLUM OF THE MSU-IIT\\
+	INTEGRATED DEVELOPMENTAL SCHOOL\\
+	\vspace{1cm}
+	2024--2030\\
+	\vfill
+	\large
+	THE FACULTY\\
+	\pagebreak}
+\end{center}	
+%----------------END COVER PAGE--------------------------------
 
 \newpage
 \tableofcontents
@@ -37,6 +59,6 @@
 \include{01_Rationale_Obj_Strat_Proc}
 
 % PROGRAMS
-%\include{IT_Program}
+\include{IT_Program}
 
 \end{document}
